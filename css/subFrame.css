@@ -1,0 +1,191 @@
+.info_title{
+    color: rgb(53, 53, 148);
+    font-size: 2em;
+    font-family: "楷体";
+    font-weight: bold;
+}
+/* 表格的一些参数 */
+.table_box
+{
+    width: 100%;
+    border: 1px solid rgba(36, 38, 148, 0.658);  
+}
+/* 文档表格 */
+.table_box.doc_table{
+    position: absolute;
+    width: 85%;
+}
+/* 表格的行列 */
+.table_box .title_row{
+    height: 30px;
+    background-color: rgba(74, 126, 238, 0.466);
+}
+.table_box .content_row{
+    height: 30px;
+}
+/* 表格的标题 */
+.title{
+    color: rgb(53, 53, 148);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "楷体";
+}
+/* 表格的内容 */
+.content{
+    text-align: center;
+    vertical-align: middle;
+    font-family: "楷体";
+}
+
+.content a:hover{
+    color: rgb(53, 53, 148);
+    background: rgba(130, 240, 231, 0.445);
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* 公告和文件主页面 */
+.top_div{
+    display: grid;
+    grid-template-rows: 50px 30px 400px;
+    width: 100%;
+    grid-template-areas: "head-title" "tag-area" "table-area";
+}
+
+/* 公告和文件页面顶课程名 */
+.course_title{
+    grid-area: head-title;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* 课程文件标签行 */
+.tag_bar{
+    grid-area: tag-area;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 10% 80%;
+    grid-template-areas: "tag-1 tag-2 rest-area";
+}
+
+.tag{
+    font-weight: bold;
+    background-color: rgba(174, 197, 212, 0.363);
+    border: 1px solid rgba(36, 38, 148, 0.658);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tag:hover{
+    color: rgb(122, 9, 122);
+    font-weight: bold;
+    background: rgba(130, 240, 231, 0.445);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#tag1{
+    grid-area: tag-1;
+}
+
+#tag2{
+    grid-area: tag-2;
+}
+
+#th_0_0:hover,#th_0_1:hover,#th_1_0:hover,#th_1_1:hover{
+    color: rgb(122, 9, 122);
+    font-weight: bold;
+    background: rgba(130, 240, 231, 0.445);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* 公告中间层补充 */
+.center_floor{
+    grid-area: tag-area;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: "tag-1 rest-area";
+}
+
+#introduction{
+    grid-area: tag-1;
+    font-weight: bold;
+    background-color: rgba(174, 197, 212, 0.363);
+    border: 1px solid rgba(36, 38, 148, 0.658);
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* 公告和文件的表格部分 */
+.table_div{
+    grid-area: table-area;
+    width: 100%;
+}
+
+
+/* 一个课程公告的主界面 */
+.common_div{
+    display: grid;
+    grid-template-rows: 50px 400px 30px;
+    width: 100%;
+    grid-template-areas: "common-title-area" "common-main-area" "common-botton-area";
+}
+.common_title{
+    grid-area: common-title-area;  
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.common_main{
+    grid-area: common-main-area;
+    width: 100%;
+    height: 100%;
+}
+
+.common_button_div{
+    grid-area: common-botton-area;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table_box.common{
+    height: 100%;
+    width: 100%;
+}
+
+.title.common{
+    width: 10%;
+    border-right: 1px solid rgba(36, 38, 148, 0.658);
+}
+
+.content.common{
+    width: 90%;
+}
+
+
+input[type = "button"]{
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+input[type = "button"]:hover{
+    background: rgba(130, 240, 231, 0.445);
+    text-decoration: underline;
+    color: rgb(122, 9, 122);
+    font-weight: bold;
+    cursor: pointer;
+}

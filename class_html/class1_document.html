@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/subFrame.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../js/myjs.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="top_div">
+      <div class="course_title">
+          <span class="info_title">前端技术实训课程</span>
+      </div>
+      <div class = "tag_bar">
+        <div id="tag1" class="tag" onclick="changeDocTable(this)">
+          电子教案
+        </div>
+        <div id="tag2" class="tag" onclick="changeDocTable(this)">
+          作业答案
+        </div>
+      </div>
+      <div class="table_div">
+          <table class="table_box doc_table" id="document1">
+            <tbody>
+              <tr class="title_row">
+                <th class="title as" id="th_0_0" onclick="SortTable(this)">
+                  序号
+                </th>
+                <th class="title" id="th_0_1" onclick="SortTable(this)">
+                  标题
+                </td>
+                <th class="title" id="th_0_2" onclick="SortTable(this)">
+                  简要说明
+                </th>
+                <th class="title" id="th_0_3" onclick="SortTable(this)"> 
+                  文件大小
+                </th>
+                <th class="title" id="th_0_4" onclick="SortTable(this)">
+                  上载时间
+                </th>
+                <th class="title" id="th_0_5" onclick="SortTable(this)">
+                  状态
+                </th>
+              </tr>
+        
+              <tr class = "content_row">
+                <td class="content" name="td_0_0">
+                  1
+                </td>
+                <td class="content" name="td_0_1">
+                  <a href="../uploadFile/00_CourseInfo_79108521.pdf" download="courseInfo">
+                    课程简介
+                  </a>
+                </td>
+                <td class="content" name="td_0_2">
+                  好好学习！！
+                </td>
+                <td class="content" name="td_0_3">
+                  0.97M
+                </td>
+                <td class="content" name="td_0_4">
+                  2018-07-01
+                </td>
+                <td class="content" name="td_0_5">
+                  新文件
+                </td>
+              </tr>
+              <tr class = "content_row">
+                <td class="content" name="td_0_0">
+                  2
+                </td>
+                <td class="content" name="td_0_1">
+                  <a href="../uploadFile/01_前端与HTML_15203519.zip" download="course1">
+                    HTML
+                  </a>
+                </td>
+                <td class="content" name="td_0_2">
+                  好好学习！！
+                </td>
+                <td class="content" name="td_0_3">
+                  2.60M
+                </td>
+                <td class="content" name="td_0_4">
+                  2018-07-01
+                </td>
+                <td class="content" name="td_0_5">
+                  新文件
+                </td>
+              </tr>
+              <tr class = "content_row">
+                <td class="content" name="td_0_0">
+                  3
+                </td>
+                <td class="content" name="td_0_1">
+                  <a href="../uploadFile/02_CSS_270207154.zip" download="course2">
+                    CSS
+                  </a>
+                </td>
+                <td class="content" name="td_0_2">
+                  好好学习！！
+                </td>
+                <td class="content" name="td_0_3">
+                  2.68M
+                </td>
+                <td class="content" name="td_0_4">
+                  2018-07-03
+                </td>
+                <td class="content" name="td_0_5">
+                  新文件
+                </td>
+              </tr>
+              <tr class = "content_row">
+                <td class="content" name="td_0_0">
+                  4
+                </td>
+                <td class="content" name="td_0_1">
+                  <a href="../uploadFile/JavaScript 基础_91105276.pdf" download="course3">
+                    JavaScript
+                  </a>
+                </td>
+                <td class="content" name="td_0_2">
+                  好好学习！！
+                </td>
+                <td class="content" name="td_0_3">
+                  5.79M
+                </td>
+                <td class="content" name="td_0_4">
+                  2018-07-04
+                </td>
+                <td class="content" name="td_0_5">
+                  新文件
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table_box doc_table" id="document2" style="visibility: hidden">
+              <tbody>
+                <tr class="title_row">
+                  <th class="title as" id="th_1_0" onclick="SortTable(this)">
+                    序号
+                  </th>
+                  <th class="title" id="th_1_1" onclick="SortTable(this)">
+                    标题
+                  </td>
+                  <th class="title" id="th_1_2" onclick="SortTable(this)">
+                    简要说明
+                  </th>
+                  <th class="title" id="th_1_3" onclick="SortTable(this)"> 
+                    文件大小
+                  </th>
+                  <th class="title" id="th_1_4" onclick="SortTable(this)">
+                    上载时间
+                  </th>
+                  <th class="title" id="th_1_5" onclick="SortTable(this)">
+                    状态
+                  </th>
+                </tr>
+          
+                <tr class = "content_row">
+                  <td class="content" name="td_1_0">
+                    1
+                  </td>
+                  <td class="content" name="td_1_1">
+                    <a href="../uploadFile/Homework01.pdf" download="hm1">
+                      作业1
+                    </a>
+                  </td>
+                  <td class="content" name="td_1_2">
+                    好好学习！！
+                  </td>
+                  <td class="content" name="td_1_3">
+                    146KB
+                  </td>
+                  <td class="content" name="td_1_4">
+                    2018-07-01
+                  </td>
+                  <td class="content" name="td_1_5">
+                    新文件
+                  </td>
+                </tr>
+                <tr class = "content_row">
+                  <td class="content" name="td_1_0">
+                    2
+                  </td>
+                  <td class="content" name="td_1_1">
+                    <a href="../uploadFile/Homework02.pdf" download="hm2">
+                      作业2
+                    </a>
+                  </td>
+                  <td class="content" name="td_1_2">
+                    好好学习！！
+                  </td>
+                  <td class="content" name="td_1_3">
+                    247KB
+                  </td>
+                  <td class="content" name="td_1_4">
+                    2018-07-01
+                  </td>
+                  <td class="content" name="td_1_5">
+                    新文件
+                  </td>
+                </tr>
+                <tr class = "content_row">
+                  <td class="content" name="td_1_0">
+                    3
+                  </td>
+                  <td class="content" name="td_1_1">
+                    <a href="../uploadFile/Homework03.pdf" download="hm3">
+                      作业3
+                    </a>
+                  </td>
+                  <td class="content" name="td_1_2">
+                    好好学习！！
+                  </td>
+                  <td class="content" name="td_1_3">
+                    226KB
+                  </td>
+                  <td class="content" name="td_1_4">
+                    2018-07-03
+                  </td>
+                  <td class="content" name="td_1_5">
+                    新文件
+                  </td>
+                </tr>
+                <tr class = "content_row">
+                  <td class="content" name="td_1_0">
+                    4
+                  </td>
+                  <td class="content" name="td_1_1">
+                    <a href="../uploadFile/Homework04.pdf" download="hm4">
+                      作业4
+                    </a>
+                  </td>
+                  <td class="content" name="td_1_2">
+                    好好学习！！
+                  </td>
+                  <td class="content" name="td_1_3">
+                    208KB
+                  </td>
+                  <td class="content" name="td_1_4">
+                    2018-07-04
+                  </td>
+                  <td class="content" name="td_1_5">
+                    新文件
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+</body>
+</html>

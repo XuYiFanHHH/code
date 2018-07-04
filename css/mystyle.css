@@ -1,0 +1,110 @@
+body{
+    display: grid;
+    grid-template-rows: 118px 500px 100px;
+    grid-template-areas: "head_photo" "main_frame" "foot";
+}
+
+header{
+    width: 100%;
+    grid-area: head_photo;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "p1 p2";
+}
+
+#photo1{
+    grid-area: p1;
+    height: 118px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#photo2{
+    grid-area: p2;
+    height: 118px;
+    overflow: hidden;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 课程容器鼠标悬停 */
+.class_container:hover{
+    color: rgb(122, 9, 122);
+    font-weight: bold;
+    background: rgba(130, 240, 231, 0.445);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* 页面下部 */
+footer{
+    grid-area: foot;
+    text-align: center;
+    font-family: "楷体";
+    background: rgba(63, 44, 235, 0.247);
+}
+/* 课程容器 */
+.class_container{
+    height: 100px;
+    width: 200px;
+    font-family: "楷体";
+    font-size: 1.5em;
+    color: rgb(53, 53, 148);
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border: 2px solid rgba(36, 38, 148, 0.658);
+    margin: 2em;
+    margin-left: 42%;
+}
+.course1{
+    grid-area: main_frame;
+}
+/* 课程主页面 */
+#course_box{
+    height: 500px;
+    grid-area: main_frame;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: "course_menu rframe";
+}
+/* 左侧菜单栏 */
+#left_menu{
+    grid-area: course_menu;
+    border: 1px solid rgba(36, 38, 148, 0.658);  
+}
+
+/* 课程文件 公告*/
+.menu_item{
+    font-family: "楷体";
+    font-size: 1em;
+    color: rgb(53, 53, 148);
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgba(36, 38, 148, 0.658);
+    background: #fff;
+    margin: 2em;
+}
+
+.menu_item:hover{
+    color: rgb(122, 9, 122);
+    font-weight: bold;
+    background-color: rgba(174, 197, 212, 0.363); 
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* 右侧子窗口 */
+#right_frame{
+    grid-area: rframe;
+    width: 100%;
+    height: 100%;
+}
+
+
